@@ -192,7 +192,7 @@ export class UITreeNode implements OnInit {
     draghoverNode: boolean;
 
     ngOnInit() {
-        this.node.parent = this.parentNode;
+        this.node = Object.assign(this.node, { parent: this.parentNode });
         if (this.parentNode) {
             this.tree.syncNodeOption(this.node, this.tree.value, 'parent', this.tree.getNodeWithKey(this.parentNode.key, this.tree.value));
         }
@@ -869,17 +869,17 @@ export class Tree implements OnInit, AfterContentInit, OnChanges, OnDestroy, Blo
     serializeNodes(parent, nodes, level, visible) {
         if (nodes && nodes.length) {
             for (let node of nodes) {
-                node.parent = parent;
+                const newNode = Object.assign(node, { parent: parent });
                 const rowNode = {
-                    node: node,
+                    node: newNode,
                     parent: parent,
                     level: level,
                     visible: visible && (parent ? parent.expanded : true)
                 };
                 this.serializedValue.push(rowNode);
 
-                if (rowNode.visible && node.expanded) {
-                    this.serializeNodes(node, node.children, level + 1, rowNode.visible);
+                if (rowNode.visible && newNode.expanded) {
+                    this.serializeNodes(newNode, newNode.children, level + 1, rowNode.visible);
                 }
             }
         }

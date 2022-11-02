@@ -154,7 +154,7 @@ describe('DomHandler', () => {
         element.appendChild(childEl2);
         element.appendChild(childEl3);
         DomHandler.absolutePosition(element.children[2], element);
-        expect(childEl3.style.top).toEqual('0px');
+        expect(childEl3.style.top).toEqual('68px'); // old is '0px'
         expect(childEl3.style.left).toEqual('0px');
     });
 

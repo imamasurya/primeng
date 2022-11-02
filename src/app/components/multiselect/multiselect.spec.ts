@@ -4,6 +4,7 @@ import { MultiSelect, MultiSelectItem } from './multiselect';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { ScrollingModule } from '@angular/cdk/scrolling';
 import { TooltipModule } from 'primeng/tooltip';
+import { OverlayModule } from '../overlay/overlay';
 
 describe('MultiSelect', () => {
     let multiselect: MultiSelect;
@@ -11,7 +12,7 @@ describe('MultiSelect', () => {
 
     beforeEach(() => {
         TestBed.configureTestingModule({
-            imports: [NoopAnimationsModule, ScrollingModule, TooltipModule],
+            imports: [NoopAnimationsModule, ScrollingModule, TooltipModule, OverlayModule],
             declarations: [MultiSelect, MultiSelectItem]
         });
 
@@ -286,8 +287,8 @@ describe('MultiSelect', () => {
 
         const multiselectItemEl = fixture.debugElement.queryAll(By.css('.p-multiselect-item'));
         expect(multiselectItemEl.length).toEqual(10);
-        const fiatEl = multiselectItemEl[2];
-        const bmwEl = multiselectItemEl[1];
+        const bmwEl = multiselectItemEl[2];
+        const fiatEl = multiselectItemEl[1];
         const audiEl = multiselectItemEl[0];
         const onOptionClickSpy = spyOn(multiselect, 'onOptionClick').and.callThrough();
         bmwEl.nativeElement.click();
