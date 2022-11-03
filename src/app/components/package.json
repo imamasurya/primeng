@@ -1,9 +1,9 @@
 {
-    "name": "primeng",
-    "version": "14.1.2",
+    "name": "@imamasurya/primeng",
+    "version": "14.1.2-CUSTOM",
     "repository": {
       "type": "git",
-      "url": "https://github.com/primefaces/primeng"
+      "url": "https://github.com/imamasurya/primeng.git"
     },
     "keywords": [
       "angular"

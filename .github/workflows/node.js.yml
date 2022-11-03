@@ -1,46 +1,41 @@
-name: NodeJS CI
+name: NodeJS CI and publish package
 
 on:
-  push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
+    push:
+        branches: [14.1.2-CUSTOM]
+    pull_request:
+        branches: [14.1.2-CUSTOM]
 
 permissions:
-  contents: read
+    contents: read
+    packages: write
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
+    build:
+        runs-on: ubuntu-latest
 
-    strategy:
-      matrix:
-        node-version: [18.x]
+        strategy:
+            matrix:
+                node-version: [18.x]
 
-    steps:
-    - uses: actions/checkout@v2
+        steps:
+            - uses: actions/checkout@v2
 
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v2
-      with:
-        node-version: ${{ matrix.node-version }}
-        cache: 'npm'
+            - name: Use Node.js ${{ matrix.node-version }}
+              uses: actions/setup-node@v2
+              with:
+                  node-version: ${{ matrix.node-version }}
+                  cache: 'npm'
+                  registry-rul: 'https://npm.pkg.github.com'
+                  scope: '@imamasurya'
 
-    - name: Build
-      run: |
-        npm install
+            - name: Build
+              run: |
+                  npm install
 
-    - name: Code Format
-      if: ${{ success() }}
-      run: |
-        npm run format:check
-
-    - name: Security Check
-      if: ${{ success() }}
-      run: |
-        npm run security:check
-
-    - name: Test
-      if: ${{ success() }}
-      run: |
-        npm run test:headless
+            - name: Publish Package
+              if: ${{ success() }}
+              run: |
+                  npm run build:lib
+            - run: cd dist
+            - run: npm publish
