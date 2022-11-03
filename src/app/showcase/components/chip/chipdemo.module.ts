@@ -2,11 +2,11 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ChipDemo } from './chipdemo';
 import { ChipDemoRoutingModule } from './chipdemo-routing.module';
-import { ButtonModule } from 'primeng/button';
-import { PanelModule } from 'primeng/panel';
-import { TabViewModule } from 'primeng/tabview';
+import { ButtonModule } from '@imamasurya/primeng/button';
+import { PanelModule } from '@imamasurya/primeng/panel';
+import { TabViewModule } from '@imamasurya/primeng/tabview';
 import { AppCodeModule } from '../../app.code.component';
-import { ChipModule } from 'primeng/chip';
+import { ChipModule } from '@imamasurya/primeng/chip';
 import { AppDemoActionsModule } from '../../app.demoactions.component';
 
 @NgModule({

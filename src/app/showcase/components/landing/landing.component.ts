@@ -1,8 +1,8 @@
 import { Component, ElementRef, OnInit, ViewChild, OnDestroy, ChangeDetectorRef } from '@angular/core';
-import { MenuItem, SelectItem, TreeNode } from 'primeng/api';
+import { MenuItem, SelectItem, TreeNode } from '@imamasurya/primeng/api';
 import { NodeService } from '../../service/nodeservice';
 import { CustomerService } from '../../service/customerservice';
-import { Table } from 'primeng/table';
+import { Table } from '@imamasurya/primeng/table';
 import { AppConfigService } from '../../service/appconfigservice';
 import { AppConfig } from '../../domain/appconfig';
 import { Customer, Representative } from '../../domain/customer';

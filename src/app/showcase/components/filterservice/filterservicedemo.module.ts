@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { ButtonModule } from 'primeng/button';
-import { TabViewModule } from 'primeng/tabview';
+import { ButtonModule } from '@imamasurya/primeng/button';
+import { TabViewModule } from '@imamasurya/primeng/tabview';
 import { FilterServiceDemo } from './filterservicedemo';
 import { FilterServiceDemoRoutingModule } from './filterservice-routing.module';
-import { AutoCompleteModule } from 'primeng/autocomplete';
-import { TableModule } from 'primeng/table';
-import { InputTextModule } from 'primeng/inputtext';
+import { AutoCompleteModule } from '@imamasurya/primeng/autocomplete';
+import { TableModule } from '@imamasurya/primeng/table';
+import { InputTextModule } from '@imamasurya/primeng/inputtext';
 import { AppCodeModule } from '../../app.code.component';
 import { AppDemoActionsModule } from '../../app.demoactions.component';
 

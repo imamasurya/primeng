@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { NodeService } from '../../service/nodeservice';
-import { TreeNode } from 'primeng/api';
-import { TreeDragDropService } from 'primeng/api';
-import { MessageService } from 'primeng/api';
+import { TreeNode } from '@imamasurya/primeng/api';
+import { TreeDragDropService } from '@imamasurya/primeng/api';
+import { MessageService } from '@imamasurya/primeng/api';
 
 @Component({
     templateUrl: './treedragdropdemo.html',

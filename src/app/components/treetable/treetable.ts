@@ -25,17 +25,17 @@ import {
     ChangeDetectorRef
 } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { TreeNode } from 'primeng/api';
+import { TreeNode } from '@imamasurya/primeng/api';
 import { Subject, Subscription } from 'rxjs';
-import { DomHandler } from 'primeng/dom';
-import { PaginatorModule } from 'primeng/paginator';
-import { PrimeTemplate, SharedModule, FilterService } from 'primeng/api';
-import { SortMeta } from 'primeng/api';
-import { BlockableUI } from 'primeng/api';
-import { FilterMetadata } from 'primeng/api';
-import { ObjectUtils } from 'primeng/utils';
-import { RippleModule } from 'primeng/ripple';
-import { Scroller, ScrollerModule, ScrollerOptions } from 'primeng/scroller';
+import { DomHandler } from '@imamasurya/primeng/dom';
+import { PaginatorModule } from '@imamasurya/primeng/paginator';
+import { PrimeTemplate, SharedModule, FilterService } from '@imamasurya/primeng/api';
+import { SortMeta } from '@imamasurya/primeng/api';
+import { BlockableUI } from '@imamasurya/primeng/api';
+import { FilterMetadata } from '@imamasurya/primeng/api';
+import { ObjectUtils } from '@imamasurya/primeng/utils';
+import { RippleModule } from '@imamasurya/primeng/ripple';
+import { Scroller, ScrollerModule, ScrollerOptions } from '@imamasurya/primeng/scroller';
 
 @Injectable()
 export class TreeTableService {

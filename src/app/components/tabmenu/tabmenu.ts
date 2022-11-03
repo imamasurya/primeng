@@ -1,10 +1,10 @@
 import { NgModule, Component, Input, ContentChildren, QueryList, AfterContentInit, AfterViewInit, AfterViewChecked, TemplateRef, ChangeDetectionStrategy, ViewEncapsulation, ViewChild, ElementRef, ChangeDetectorRef, OnDestroy } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RippleModule } from 'primeng/ripple';
-import { PrimeTemplate, SharedModule, MenuItem } from 'primeng/api';
+import { RippleModule } from '@imamasurya/primeng/ripple';
+import { PrimeTemplate, SharedModule, MenuItem } from '@imamasurya/primeng/api';
 import { ActivatedRoute, Router, RouterModule } from '@angular/router';
-import { DomHandler } from 'primeng/dom';
-import { TooltipModule } from 'primeng/tooltip';
+import { DomHandler } from '@imamasurya/primeng/dom';
+import { TooltipModule } from '@imamasurya/primeng/tooltip';
 
 @Component({
     selector: 'p-tabMenu',

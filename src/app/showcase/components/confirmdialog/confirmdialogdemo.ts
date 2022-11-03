@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ConfirmationService, ConfirmEventType, MessageService } from 'primeng/api';
+import { ConfirmationService, ConfirmEventType, MessageService } from '@imamasurya/primeng/api';
 
 @Component({
     templateUrl: './confirmdialogdemo.html',

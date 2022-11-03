@@ -1,11 +1,11 @@
 import { NgModule, Component, ElementRef, AfterContentInit, AfterViewChecked, Input, Output, ContentChildren, QueryList, TemplateRef, EventEmitter, ViewChild, ChangeDetectionStrategy, ViewEncapsulation, ChangeDetectorRef } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ButtonModule } from 'primeng/button';
-import { SharedModule, PrimeTemplate, FilterService } from 'primeng/api';
-import { DomHandler } from 'primeng/dom';
-import { RippleModule } from 'primeng/ripple';
+import { ButtonModule } from '@imamasurya/primeng/button';
+import { SharedModule, PrimeTemplate, FilterService } from '@imamasurya/primeng/api';
+import { DomHandler } from '@imamasurya/primeng/dom';
+import { RippleModule } from '@imamasurya/primeng/ripple';
 import { CdkDragDrop, DragDropModule, moveItemInArray, transferArrayItem } from '@angular/cdk/drag-drop';
-import { ObjectUtils, UniqueComponentId } from 'primeng/utils';
+import { ObjectUtils, UniqueComponentId } from '@imamasurya/primeng/utils';
 
 export interface PickListFilterOptions {
     filter?: (value?: any) => void;

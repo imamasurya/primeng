@@ -4,10 +4,10 @@ import { DynamicDialogModule } from '../../../components/dynamicdialog/dynamicdi
 import { ProductListDemo } from './productlistdemo';
 import { DynamicDialogDemo } from './dynamicdialogdemo';
 import { DynamicDialogDemoRoutingModule } from './dynamicdialogdemo-routing.module';
-import { ToastModule } from 'primeng/toast';
-import { TableModule } from 'primeng/table';
-import { ButtonModule } from 'primeng/button';
-import { TabViewModule } from 'primeng/tabview';
+import { ToastModule } from '@imamasurya/primeng/toast';
+import { TableModule } from '@imamasurya/primeng/table';
+import { ButtonModule } from '@imamasurya/primeng/button';
+import { TabViewModule } from '@imamasurya/primeng/tabview';
 import { AppCodeModule } from '../../app.code.component';
 import { AppDemoActionsModule } from '../../app.demoactions.component';
 

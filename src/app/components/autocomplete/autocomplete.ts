@@ -21,15 +21,15 @@ import {
 } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { trigger, style, transition, animate, AnimationEvent } from '@angular/animations';
-import { InputTextModule } from 'primeng/inputtext';
-import { ButtonModule } from 'primeng/button';
-import { RippleModule } from 'primeng/ripple';
-import { SharedModule, PrimeTemplate, TranslationKeys, PrimeNGConfig, OverlayService } from 'primeng/api';
-import { DomHandler, ConnectedOverlayScrollHandler } from 'primeng/dom';
-import { ObjectUtils, UniqueComponentId, ZIndexUtils } from 'primeng/utils';
+import { InputTextModule } from '@imamasurya/primeng/inputtext';
+import { ButtonModule } from '@imamasurya/primeng/button';
+import { RippleModule } from '@imamasurya/primeng/ripple';
+import { SharedModule, PrimeTemplate, TranslationKeys, PrimeNGConfig, OverlayService } from '@imamasurya/primeng/api';
+import { DomHandler, ConnectedOverlayScrollHandler } from '@imamasurya/primeng/dom';
+import { ObjectUtils, UniqueComponentId, ZIndexUtils } from '@imamasurya/primeng/utils';
 import { NG_VALUE_ACCESSOR, ControlValueAccessor } from '@angular/forms';
-import { Scroller, ScrollerModule, ScrollerOptions } from 'primeng/scroller';
-import { AutoFocusModule } from 'primeng/autofocus';
+import { Scroller, ScrollerModule, ScrollerOptions } from '@imamasurya/primeng/scroller';
+import { AutoFocusModule } from '@imamasurya/primeng/autofocus';
 
 export const AUTOCOMPLETE_VALUE_ACCESSOR: any = {
     provide: NG_VALUE_ACCESSOR,

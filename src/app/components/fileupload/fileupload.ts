@@ -20,14 +20,14 @@ import {
 } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { DomSanitizer } from '@angular/platform-browser';
-import { ButtonModule } from 'primeng/button';
-import { MessagesModule } from 'primeng/messages';
-import { ProgressBarModule } from 'primeng/progressbar';
-import { DomHandler } from 'primeng/dom';
-import { Message, TranslationKeys } from 'primeng/api';
-import { PrimeTemplate, SharedModule, PrimeNGConfig } from 'primeng/api';
-import { BlockableUI } from 'primeng/api';
-import { RippleModule } from 'primeng/ripple';
+import { ButtonModule } from '@imamasurya/primeng/button';
+import { MessagesModule } from '@imamasurya/primeng/messages';
+import { ProgressBarModule } from '@imamasurya/primeng/progressbar';
+import { DomHandler } from '@imamasurya/primeng/dom';
+import { Message, TranslationKeys } from '@imamasurya/primeng/api';
+import { PrimeTemplate, SharedModule, PrimeNGConfig } from '@imamasurya/primeng/api';
+import { BlockableUI } from '@imamasurya/primeng/api';
+import { RippleModule } from '@imamasurya/primeng/ripple';
 import { HttpClient, HttpEvent, HttpEventType, HttpHeaders } from '@angular/common/http';
 import { Subscription } from 'rxjs';
 

@@ -1,6 +1,6 @@
 import { Component, OnInit, ElementRef, ViewChild, OnDestroy } from '@angular/core';
 import { PhotoService } from '../../service/photoservice';
-import { Galleria } from 'primeng/galleria';
+import { Galleria } from '@imamasurya/primeng/galleria';
 
 @Component({
     templateUrl: './galleriademo.html'

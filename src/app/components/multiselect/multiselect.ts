@@ -24,14 +24,14 @@ import {
 } from '@angular/core';
 import { AnimationEvent } from '@angular/animations';
 import { CommonModule } from '@angular/common';
-import { DomHandler } from 'primeng/dom';
-import { ObjectUtils } from 'primeng/utils';
-import { SharedModule, PrimeTemplate, Footer, Header, FilterService, PrimeNGConfig, TranslationKeys, OverlayService, OverlayOptions } from 'primeng/api';
+import { DomHandler } from '@imamasurya/primeng/dom';
+import { ObjectUtils } from '@imamasurya/primeng/utils';
+import { SharedModule, PrimeTemplate, Footer, Header, FilterService, PrimeNGConfig, TranslationKeys, OverlayService, OverlayOptions } from '@imamasurya/primeng/api';
 import { NG_VALUE_ACCESSOR, ControlValueAccessor } from '@angular/forms';
-import { TooltipModule } from 'primeng/tooltip';
-import { RippleModule } from 'primeng/ripple';
-import { Overlay, OverlayModule } from 'primeng/overlay';
-import { Scroller, ScrollerModule, ScrollerOptions } from 'primeng/scroller';
+import { TooltipModule } from '@imamasurya/primeng/tooltip';
+import { RippleModule } from '@imamasurya/primeng/ripple';
+import { Overlay, OverlayModule } from '@imamasurya/primeng/overlay';
+import { Scroller, ScrollerModule, ScrollerOptions } from '@imamasurya/primeng/scroller';
 
 export const MULTISELECT_VALUE_ACCESSOR: any = {
     provide: NG_VALUE_ACCESSOR,

@@ -20,13 +20,13 @@ import {
     Inject
 } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { SharedModule, PrimeTemplate, PrimeNGConfig, OverlayService } from 'primeng/api';
-import { ObjectUtils, ZIndexUtils } from 'primeng/utils';
-import { DomHandler } from 'primeng/dom';
+import { SharedModule, PrimeTemplate, PrimeNGConfig, OverlayService } from '@imamasurya/primeng/api';
+import { ObjectUtils, ZIndexUtils } from '@imamasurya/primeng/utils';
+import { DomHandler } from '@imamasurya/primeng/dom';
 import { trigger, style, transition, animate, AnimationEvent } from '@angular/animations';
-import { ConnectedOverlayScrollHandler } from 'primeng/dom';
+import { ConnectedOverlayScrollHandler } from '@imamasurya/primeng/dom';
 import { NG_VALUE_ACCESSOR } from '@angular/forms';
-import { RippleModule } from 'primeng/ripple';
+import { RippleModule } from '@imamasurya/primeng/ripple';
 
 export const CASCADESELECT_VALUE_ACCESSOR: any = {
     provide: NG_VALUE_ACCESSOR,

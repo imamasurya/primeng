@@ -3,9 +3,9 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { InputTextDemo } from './inputtextdemo';
 import { InputTextDemoRoutingModule } from './inputtextdemo-routing.module';
-import { InputTextModule } from 'primeng/inputtext';
-import { ButtonModule } from 'primeng/button';
-import { TabViewModule } from 'primeng/tabview';
+import { InputTextModule } from '@imamasurya/primeng/inputtext';
+import { ButtonModule } from '@imamasurya/primeng/button';
+import { TabViewModule } from '@imamasurya/primeng/tabview';
 import { AppCodeModule } from '../../app.code.component';
 import { AppDemoActionsModule } from '../../app.demoactions.component';
 

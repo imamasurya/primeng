@@ -18,8 +18,8 @@ import {
     ChangeDetectorRef
 } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Header, Footer, PrimeTemplate, SharedModule, BlockableUI } from 'primeng/api';
-import { Scroller, ScrollerModule, ScrollerOptions } from 'primeng/scroller';
+import { Header, Footer, PrimeTemplate, SharedModule, BlockableUI } from '@imamasurya/primeng/api';
+import { Scroller, ScrollerModule, ScrollerOptions } from '@imamasurya/primeng/scroller';
 
 @Component({
     selector: 'p-virtualScroller',

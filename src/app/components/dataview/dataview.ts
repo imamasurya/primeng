@@ -19,10 +19,10 @@ import {
     OnDestroy
 } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ObjectUtils } from 'primeng/utils';
-import { Header, Footer, PrimeTemplate, SharedModule, FilterService, TranslationKeys, PrimeNGConfig } from 'primeng/api';
-import { PaginatorModule } from 'primeng/paginator';
-import { BlockableUI } from 'primeng/api';
+import { ObjectUtils } from '@imamasurya/primeng/utils';
+import { Header, Footer, PrimeTemplate, SharedModule, FilterService, TranslationKeys, PrimeNGConfig } from '@imamasurya/primeng/api';
+import { PaginatorModule } from '@imamasurya/primeng/paginator';
+import { BlockableUI } from '@imamasurya/primeng/api';
 import { Subscription } from 'rxjs';
 
 @Component({

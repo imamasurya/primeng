@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ScrollerDemo } from './scrollerdemo';
-import { ScrollerModule } from 'primeng/scroller';
+import { ScrollerModule } from '@imamasurya/primeng/scroller';
 import { ScrollerDemoRoutingModule } from './scrollerdemo-routing.module';
-import { SkeletonModule } from 'primeng/skeleton';
-import { TabViewModule } from 'primeng/tabview';
+import { SkeletonModule } from '@imamasurya/primeng/skeleton';
+import { TabViewModule } from '@imamasurya/primeng/tabview';
 import { AppCodeModule } from '../../app.code.component';
 import { AppDemoActionsModule } from '../../app.demoactions.component';
 

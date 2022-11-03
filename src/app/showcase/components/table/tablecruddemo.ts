@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Product } from '../../domain/product';
 import { ProductService } from '../../service/productservice';
-import { ConfirmationService } from 'primeng/api';
-import { MessageService } from 'primeng/api';
+import { ConfirmationService } from '@imamasurya/primeng/api';
+import { MessageService } from '@imamasurya/primeng/api';
 
 @Component({
     templateUrl: './tablecruddemo.html',

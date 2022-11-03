@@ -3,8 +3,8 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { AutoCompleteDemo } from './autocompletedemo';
 import { AutoCompleteDemoRoutingModule } from './autocompletedemo-routing.module';
-import { AutoCompleteModule } from 'primeng/autocomplete';
-import { TabViewModule } from 'primeng/tabview';
+import { AutoCompleteModule } from '@imamasurya/primeng/autocomplete';
+import { TabViewModule } from '@imamasurya/primeng/tabview';
 import { AppCodeModule } from '../../app.code.component';
 import { AppDemoActionsModule } from '../../app.demoactions.component';
 

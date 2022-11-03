@@ -2,9 +2,9 @@ import { animate, animation, AnimationEvent, style, transition, trigger, useAnim
 import { CommonModule, DOCUMENT } from '@angular/common';
 import { ChangeDetectionStrategy, ChangeDetectorRef, Component, ElementRef, EventEmitter, forwardRef, Inject, Input, NgModule, OnDestroy, Output, Renderer2, ViewChild, ViewEncapsulation } from '@angular/core';
 import { NG_VALUE_ACCESSOR } from '@angular/forms';
-import { OverlayModeType, OverlayOptions, OverlayService, PrimeNGConfig, SharedModule } from 'primeng/api';
-import { ConnectedOverlayScrollHandler, DomHandler } from 'primeng/dom';
-import { ZIndexUtils } from 'primeng/utils';
+import { OverlayModeType, OverlayOptions, OverlayService, PrimeNGConfig, SharedModule } from '@imamasurya/primeng/api';
+import { ConnectedOverlayScrollHandler, DomHandler } from '@imamasurya/primeng/dom';
+import { ZIndexUtils } from '@imamasurya/primeng/utils';
 
 export const OVERLAY_VALUE_ACCESSOR: any = {
     provide: NG_VALUE_ACCESSOR,

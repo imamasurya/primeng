@@ -3,8 +3,8 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { CheckboxDemo } from './checkboxdemo';
 import { CheckboxDemoRoutingModule } from './checkboxdemo-routing.module';
-import { CheckboxModule } from 'primeng/checkbox';
-import { TabViewModule } from 'primeng/tabview';
+import { CheckboxModule } from '@imamasurya/primeng/checkbox';
+import { TabViewModule } from '@imamasurya/primeng/tabview';
 import { AppCodeModule } from '../../app.code.component';
 import { AppDemoActionsModule } from '../../app.demoactions.component';
 

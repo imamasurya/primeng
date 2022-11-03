@@ -27,10 +27,10 @@
 */
 import { NgModule, Component, ElementRef, OnInit, Input, forwardRef, Output, EventEmitter, ViewChild, ChangeDetectionStrategy, ViewEncapsulation, ChangeDetectorRef } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { DomHandler } from 'primeng/dom';
-import { InputTextModule } from 'primeng/inputtext';
+import { DomHandler } from '@imamasurya/primeng/dom';
+import { InputTextModule } from '@imamasurya/primeng/inputtext';
 import { NG_VALUE_ACCESSOR, ControlValueAccessor } from '@angular/forms';
-import { AutoFocusModule } from 'primeng/autofocus';
+import { AutoFocusModule } from '@imamasurya/primeng/autofocus';
 
 export const INPUTMASK_VALUE_ACCESSOR: any = {
     provide: NG_VALUE_ACCESSOR,
