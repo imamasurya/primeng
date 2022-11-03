@@ -1,43 +1,43 @@
 name: NodeJS CI and publish package
 
 on:
-  push:
-    branches: [14.1.2-CUSTOM]
-  pull_request:
-    branches: [14.1.2-CUSTOM]
+    push:
+        branches: [14.1.2-CUSTOM]
+    pull_request:
+        branches: [14.1.2-CUSTOM]
 
 permissions:
-  contents: read
-  packages: write
+    contents: read
+    packages: write
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
+    build:
+        runs-on: ubuntu-latest
 
-    strategy:
-      matrix:
-        node-version: [18.x]
+        strategy:
+            matrix:
+                node-version: [18.x]
 
-    steps:
-      - uses: actions/checkout@v2
+        steps:
+            - uses: actions/checkout@v2
 
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v2
-        with:
-          node-version: ${{ matrix.node-version }}
-          cache: 'npm'
-          registry-rul: 'https://npm.pkg.github.com'
-          scope: '@imamasurya'
+            - name: Use Node.js ${{ matrix.node-version }}
+              uses: actions/setup-node@v2
+              with:
+                  node-version: ${{ matrix.node-version }}
+                  cache: 'npm'
+                  registry-url: 'https://npm.pkg.github.com'
+                  scope: '@imamasurya'
 
-      - name: Build
-        run: |
-          npm install
+            - name: Build
+              run: |
+                  npm install
 
-      - name: Publish Package
-        if: ${{ success() }}
-        run: |
-            npm run build:lib
-      - run: cd dist
-      - run: npm publish
-      env:
-          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+            - name: Publish Package
+              if: ${{ success() }}
+              run: |
+                  npm run build:lib
+            - run: cd dist
+            - run: npm publish
+              env:
+                  NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
