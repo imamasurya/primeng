@@ -21,7 +21,7 @@ jobs:
                   registry-url: https://npm.pkg.github.com
                   scope: "@imamasurya"
             - run: npm ci --force
-            - run: npm run build-lib && cd dist
-            - run: npm publish --access public
+            - run: npm run build-lib
+            - run: cd dist && npm publish --access public
               env:
                   NODE_AUTH_TOKEN: ${{ secrets.PACKAGE_TOKEN }}
