@@ -1,9 +1,9 @@
 import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {GalleriaDemoRoutingModule} from './galleriademo-routing.module';
-import {GalleriaModule} from 'primeng/galleria';
-import {TabViewModule} from 'primeng/tabview';
-import {ButtonModule} from 'primeng/button';
+import {GalleriaModule} from '@imamasurya/primeng/galleria';
+import {TabViewModule} from '@imamasurya/primeng/tabview';
+import {ButtonModule} from '@imamasurya/primeng/button';
 
 import {GalleriaDemo} from './galleriademo';
 import {GalleriaProgrammaticDemo} from './galleriaprogrammaticdemo';

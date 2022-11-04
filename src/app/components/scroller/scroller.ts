@@ -1,7 +1,7 @@
 import { NgModule, Component, Input, ElementRef, ViewChild, ChangeDetectionStrategy, ViewEncapsulation, ChangeDetectorRef, AfterContentInit, ContentChildren, QueryList, TemplateRef, Output, EventEmitter, SimpleChanges, OnInit, AfterViewChecked, OnDestroy, NgZone } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { DomHandler } from 'primeng/dom';
-import { PrimeTemplate } from 'primeng/api';
+import { DomHandler } from '@imamasurya/primeng/dom';
+import { PrimeTemplate } from '@imamasurya/primeng/api';
 
 export type ScrollerToType = 'to-start' | 'to-end' | undefined;
 

@@ -2,15 +2,15 @@ import {NgModule,Component,ElementRef,OnInit,AfterViewInit,AfterContentInit,Afte
         QueryList,ViewChild,TemplateRef,forwardRef,ChangeDetectorRef,NgZone,ViewRef,ChangeDetectionStrategy, ViewEncapsulation} from '@angular/core';
 import {trigger,style,transition,animate,AnimationEvent} from '@angular/animations';
 import {CommonModule} from '@angular/common';
-import {OverlayService, PrimeNGConfig, SelectItem, TranslationKeys} from 'primeng/api';
-import {SharedModule,PrimeTemplate, FilterService} from 'primeng/api';
-import {DomHandler, ConnectedOverlayScrollHandler} from 'primeng/dom';
-import {ObjectUtils,UniqueComponentId,ZIndexUtils} from 'primeng/utils';
+import {OverlayService, PrimeNGConfig, SelectItem, TranslationKeys} from '@imamasurya/primeng/api';
+import {SharedModule,PrimeTemplate, FilterService} from '@imamasurya/primeng/api';
+import {DomHandler, ConnectedOverlayScrollHandler} from '@imamasurya/primeng/dom';
+import {ObjectUtils,UniqueComponentId,ZIndexUtils} from '@imamasurya/primeng/utils';
 import {NG_VALUE_ACCESSOR, ControlValueAccessor} from '@angular/forms';
-import {TooltipModule} from 'primeng/tooltip';
-import {Scroller, ScrollerModule, ScrollerOptions} from 'primeng/scroller';
-import {RippleModule} from 'primeng/ripple';
-import {AutoFocusModule} from 'primeng/autofocus';
+import {TooltipModule} from '@imamasurya/primeng/tooltip';
+import {Scroller, ScrollerModule, ScrollerOptions} from '@imamasurya/primeng/scroller';
+import {RippleModule} from '@imamasurya/primeng/ripple';
+import {AutoFocusModule} from '@imamasurya/primeng/autofocus';
 
 export const DROPDOWN_VALUE_ACCESSOR: any = {
   provide: NG_VALUE_ACCESSOR,

@@ -1,9 +1,9 @@
 import {NgModule,Component,ElementRef,OnDestroy,Input,Output,EventEmitter,ChangeDetectionStrategy, ViewChild, ContentChildren, QueryList, TemplateRef, OnInit, OnChanges, AfterContentChecked, SimpleChanges, ViewEncapsulation, ChangeDetectorRef, AfterViewInit} from '@angular/core';
 import {CommonModule} from '@angular/common';
-import { SharedModule, PrimeTemplate, PrimeNGConfig } from 'primeng/api';
-import { UniqueComponentId, ZIndexUtils } from 'primeng/utils';
-import { DomHandler } from 'primeng/dom';
-import { RippleModule } from 'primeng/ripple';
+import { SharedModule, PrimeTemplate, PrimeNGConfig } from '@imamasurya/primeng/api';
+import { UniqueComponentId, ZIndexUtils } from '@imamasurya/primeng/utils';
+import { DomHandler } from '@imamasurya/primeng/dom';
+import { RippleModule } from '@imamasurya/primeng/ripple';
 import { animate, style, transition, trigger, AnimationEvent } from '@angular/animations';
 
 @Component({

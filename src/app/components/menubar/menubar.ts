@@ -1,11 +1,11 @@
 import { NgModule, Component, ElementRef, Input, Renderer2, OnDestroy,ChangeDetectorRef, ChangeDetectionStrategy, ViewEncapsulation, AfterContentInit, ContentChildren, QueryList, TemplateRef, ViewChild, Output, EventEmitter } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { DomHandler } from 'primeng/dom';
-import { ZIndexUtils } from 'primeng/utils';
-import { MenuItem, PrimeNGConfig, PrimeTemplate, SharedModule } from 'primeng/api';
+import { DomHandler } from '@imamasurya/primeng/dom';
+import { ZIndexUtils } from '@imamasurya/primeng/utils';
+import { MenuItem, PrimeNGConfig, PrimeTemplate, SharedModule } from '@imamasurya/primeng/api';
 import { RouterModule } from '@angular/router';
-import { RippleModule } from 'primeng/ripple';
-import { TooltipModule } from 'primeng/tooltip';
+import { RippleModule } from '@imamasurya/primeng/ripple';
+import { TooltipModule } from '@imamasurya/primeng/tooltip';
 
 @Component({
     selector: 'p-menubarSub',

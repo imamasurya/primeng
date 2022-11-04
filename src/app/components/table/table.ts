@@ -2,25 +2,25 @@ import { NgModule, Component, HostListener, OnInit, OnDestroy, AfterViewInit, Di
     Input, Output, EventEmitter, ElementRef, ContentChildren, TemplateRef, QueryList, ViewChild, NgZone, ChangeDetectorRef, OnChanges, SimpleChanges, ChangeDetectionStrategy, ViewEncapsulation, Renderer2} from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { PrimeTemplate, SharedModule, FilterMatchMode, FilterOperator, SelectItem, PrimeNGConfig, TranslationKeys, FilterService, OverlayService } from 'primeng/api';
-import { PaginatorModule } from 'primeng/paginator';
-import { InputTextModule } from 'primeng/inputtext';
-import { ButtonModule } from 'primeng/button';
-import { SelectButtonModule } from 'primeng/selectbutton';
-import { TriStateCheckboxModule } from 'primeng/tristatecheckbox';
-import { CalendarModule } from 'primeng/calendar';
-import { InputNumberModule } from 'primeng/inputnumber';
-import { DropdownModule } from 'primeng/dropdown';
-import { DomHandler, ConnectedOverlayScrollHandler } from 'primeng/dom';
-import { ObjectUtils, UniqueComponentId, ZIndexUtils } from 'primeng/utils';
-import { SortMeta } from 'primeng/api';
-import { TableState } from 'primeng/api';
-import { FilterMetadata } from 'primeng/api';
+import { PrimeTemplate, SharedModule, FilterMatchMode, FilterOperator, SelectItem, PrimeNGConfig, TranslationKeys, FilterService, OverlayService } from '@imamasurya/primeng/api';
+import { PaginatorModule } from '@imamasurya/primeng/paginator';
+import { InputTextModule } from '@imamasurya/primeng/inputtext';
+import { ButtonModule } from '@imamasurya/primeng/button';
+import { SelectButtonModule } from '@imamasurya/primeng/selectbutton';
+import { TriStateCheckboxModule } from '@imamasurya/primeng/tristatecheckbox';
+import { CalendarModule } from '@imamasurya/primeng/calendar';
+import { InputNumberModule } from '@imamasurya/primeng/inputnumber';
+import { DropdownModule } from '@imamasurya/primeng/dropdown';
+import { DomHandler, ConnectedOverlayScrollHandler } from '@imamasurya/primeng/dom';
+import { ObjectUtils, UniqueComponentId, ZIndexUtils } from '@imamasurya/primeng/utils';
+import { SortMeta } from '@imamasurya/primeng/api';
+import { TableState } from '@imamasurya/primeng/api';
+import { FilterMetadata } from '@imamasurya/primeng/api';
 import { Injectable } from '@angular/core';
-import { BlockableUI } from 'primeng/api';
+import { BlockableUI } from '@imamasurya/primeng/api';
 import { Subject, Subscription } from 'rxjs';
 import {trigger,style,transition,animate,AnimationEvent} from '@angular/animations';
-import { Scroller, ScrollerModule, ScrollerOptions } from 'primeng/scroller';
+import { Scroller, ScrollerModule, ScrollerOptions } from '@imamasurya/primeng/scroller';
 
 @Injectable()
 export class TableService {

@@ -5,23 +5,23 @@ import { FormsModule } from '@angular/forms';
 import { FloatLabelDemo } from './floatlabeldemo';
 import { FloatLabelDemoRoutingModule } from './floatlabeldemo-routing.module';
 
-import { ButtonModule } from 'primeng/button';
-import { PanelModule } from 'primeng/panel';
-import { TabViewModule } from 'primeng/tabview';
-import { InputTextModule } from 'primeng/inputtext';
-import { AutoCompleteModule } from 'primeng/autocomplete';
-import { CalendarModule } from 'primeng/calendar';
-import { ChipsModule } from 'primeng/chips';
-import { InputMaskModule } from 'primeng/inputmask';
-import { InputNumberModule } from 'primeng/inputnumber';
-import { DropdownModule } from 'primeng/dropdown';
-import { MultiSelectModule } from 'primeng/multiselect';
-import { InputTextareaModule } from 'primeng/inputtextarea';
-import { CascadeSelectModule } from 'primeng/cascadeselect';
+import { ButtonModule } from '@imamasurya/primeng/button';
+import { PanelModule } from '@imamasurya/primeng/panel';
+import { TabViewModule } from '@imamasurya/primeng/tabview';
+import { InputTextModule } from '@imamasurya/primeng/inputtext';
+import { AutoCompleteModule } from '@imamasurya/primeng/autocomplete';
+import { CalendarModule } from '@imamasurya/primeng/calendar';
+import { ChipsModule } from '@imamasurya/primeng/chips';
+import { InputMaskModule } from '@imamasurya/primeng/inputmask';
+import { InputNumberModule } from '@imamasurya/primeng/inputnumber';
+import { DropdownModule } from '@imamasurya/primeng/dropdown';
+import { MultiSelectModule } from '@imamasurya/primeng/multiselect';
+import { InputTextareaModule } from '@imamasurya/primeng/inputtextarea';
+import { CascadeSelectModule } from '@imamasurya/primeng/cascadeselect';
 
 import {AppCodeModule} from '../../app.code.component';
 import {AppDemoActionsModule} from '../../app.demoactions.component';
-import { PasswordModule } from 'primeng/password';
+import { PasswordModule } from '@imamasurya/primeng/password';
 
 @NgModule({
 	imports: [

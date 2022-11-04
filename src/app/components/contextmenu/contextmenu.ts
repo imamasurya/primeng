@@ -1,13 +1,13 @@
 import { NgModule,Component,ElementRef,AfterViewInit,OnDestroy,Input,Output,Renderer2,Inject,forwardRef,ViewChild,NgZone,EventEmitter,ChangeDetectionStrategy, ViewEncapsulation, ChangeDetectorRef } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { DomHandler } from 'primeng/dom';
-import { MenuItem, ContextMenuService, PrimeNGConfig } from 'primeng/api';
-import { RippleModule } from 'primeng/ripple';
-import { ZIndexUtils } from 'primeng/utils';
+import { DomHandler } from '@imamasurya/primeng/dom';
+import { MenuItem, ContextMenuService, PrimeNGConfig } from '@imamasurya/primeng/api';
+import { RippleModule } from '@imamasurya/primeng/ripple';
+import { ZIndexUtils } from '@imamasurya/primeng/utils';
 import { RouterModule } from '@angular/router';
 import { Subject, Subscription } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
-import { TooltipModule } from 'primeng/tooltip';
+import { TooltipModule } from '@imamasurya/primeng/tooltip';
 
 @Component({
     selector: 'p-contextMenuSub',

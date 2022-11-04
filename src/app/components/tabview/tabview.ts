@@ -1,10 +1,10 @@
 import {NgModule,Component,ElementRef,OnDestroy,Input,Output,EventEmitter,AfterContentInit,
         ContentChildren,QueryList,TemplateRef,EmbeddedViewRef,ViewContainerRef,ChangeDetectorRef,ChangeDetectionStrategy, ViewEncapsulation, ViewChild, AfterViewChecked, forwardRef, Inject} from '@angular/core';
 import {CommonModule} from '@angular/common';
-import {TooltipModule} from 'primeng/tooltip';
-import {RippleModule} from 'primeng/ripple';
-import {SharedModule,PrimeTemplate,BlockableUI} from 'primeng/api';
-import {DomHandler} from 'primeng/dom';
+import {TooltipModule} from '@imamasurya/primeng/tooltip';
+import {RippleModule} from '@imamasurya/primeng/ripple';
+import {SharedModule,PrimeTemplate,BlockableUI} from '@imamasurya/primeng/api';
+import {DomHandler} from '@imamasurya/primeng/dom';
 import {Subscription} from 'rxjs';
 
 let idx: number = 0;

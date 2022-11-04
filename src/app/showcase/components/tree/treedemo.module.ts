@@ -11,12 +11,12 @@ import {TreeContextMenuDemo} from './treecontextmenudemo';
 import {TreeDragDropDemo} from './treedragdropdemo';
 import {TreeHorizontalDemo} from './treehorizontaldemo';
 import {TreeDemoRoutingModule} from './treedemo-routing.module';
-import {TreeModule} from 'primeng/tree';
-import {ToastModule} from 'primeng/toast';
-import {ButtonModule} from 'primeng/button';
-import {DialogModule} from 'primeng/dialog';
-import {ContextMenuModule} from 'primeng/contextmenu';
-import {TabViewModule} from 'primeng/tabview';
+import {TreeModule} from '@imamasurya/primeng/tree';
+import {ToastModule} from '@imamasurya/primeng/toast';
+import {ButtonModule} from '@imamasurya/primeng/button';
+import {DialogModule} from '@imamasurya/primeng/dialog';
+import {ContextMenuModule} from '@imamasurya/primeng/contextmenu';
+import {TabViewModule} from '@imamasurya/primeng/tabview';
 import {AppCodeModule} from '../../app.code.component';
 import {AppDemoActionsModule} from '../../app.demoactions.component';
 

@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import {MessageService} from 'primeng/api';
+import {MessageService} from '@imamasurya/primeng/api';
 
 @Component({
     templateUrl: './toastdemo.html',

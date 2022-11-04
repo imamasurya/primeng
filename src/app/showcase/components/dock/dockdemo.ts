@@ -1,6 +1,6 @@
 import {Component} from '@angular/core';
-import { MenuItem, MessageService } from 'primeng/api';
-import { TerminalService } from 'primeng/terminal';
+import { MenuItem, MessageService } from '@imamasurya/primeng/api';
+import { TerminalService } from '@imamasurya/primeng/terminal';
 import { Subscription } from 'rxjs';
 import { NodeService } from '../../service/nodeservice';
 import { PhotoService } from '../../service/photoservice';

@@ -2,13 +2,13 @@ import { NgModule, Component, ElementRef, OnInit, AfterViewInit, AfterContentIni
     forwardRef, ViewChild, ChangeDetectorRef, TemplateRef, ContentChildren, QueryList, ContentChild, ChangeDetectionStrategy, ViewEncapsulation } from '@angular/core';
 import { trigger,style,transition,animate,AnimationEvent} from '@angular/animations';
 import { CommonModule } from '@angular/common';
-import { DomHandler, ConnectedOverlayScrollHandler } from 'primeng/dom';
-import { ObjectUtils, ZIndexUtils } from 'primeng/utils';
-import { SharedModule, PrimeTemplate, Footer, Header, FilterService, PrimeNGConfig, TranslationKeys, OverlayService } from 'primeng/api';
+import { DomHandler, ConnectedOverlayScrollHandler } from '@imamasurya/primeng/dom';
+import { ObjectUtils, ZIndexUtils } from '@imamasurya/primeng/utils';
+import { SharedModule, PrimeTemplate, Footer, Header, FilterService, PrimeNGConfig, TranslationKeys, OverlayService } from '@imamasurya/primeng/api';
 import { NG_VALUE_ACCESSOR, ControlValueAccessor } from '@angular/forms';
-import { TooltipModule } from 'primeng/tooltip';
-import { RippleModule } from 'primeng/ripple';
-import {Scroller, ScrollerModule, ScrollerOptions} from 'primeng/scroller';
+import { TooltipModule } from '@imamasurya/primeng/tooltip';
+import { RippleModule } from '@imamasurya/primeng/ripple';
+import {Scroller, ScrollerModule, ScrollerOptions} from '@imamasurya/primeng/scroller';
 
 export const MULTISELECT_VALUE_ACCESSOR: any = {
   provide: NG_VALUE_ACCESSOR,

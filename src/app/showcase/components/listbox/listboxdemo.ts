@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { SelectItemGroup } from 'primeng/api';
-import { ListboxFilterOptions } from 'primeng/listbox';
+import { SelectItemGroup } from '@imamasurya/primeng/api';
+import { ListboxFilterOptions } from '@imamasurya/primeng/listbox';
 interface City {
     name: string,
     code: string

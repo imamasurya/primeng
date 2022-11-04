@@ -7,12 +7,12 @@ import timeGridPlugin from '@fullcalendar/timegrid';
 import interactionPlugin from '@fullcalendar/interaction';
 import {FullCalendarDemo} from './fullcalendardemo';
 import {FullCalendarDemoRoutingModule} from './fullcalendardemo-routing.module';
-import {DialogModule} from 'primeng/dialog';
-import {InputTextModule} from 'primeng/inputtext';
-import {CalendarModule} from 'primeng/calendar';
-import {CheckboxModule} from 'primeng/checkbox';
-import {ButtonModule} from 'primeng/button';
-import {TabViewModule} from 'primeng/tabview';
+import {DialogModule} from '@imamasurya/primeng/dialog';
+import {InputTextModule} from '@imamasurya/primeng/inputtext';
+import {CalendarModule} from '@imamasurya/primeng/calendar';
+import {CheckboxModule} from '@imamasurya/primeng/checkbox';
+import {ButtonModule} from '@imamasurya/primeng/button';
+import {TabViewModule} from '@imamasurya/primeng/tabview';
 import {AppCodeModule} from '../../app.code.component';
 import {AppDemoActionsModule} from '../../app.demoactions.component';
 

@@ -3,10 +3,10 @@ import { trigger,style,transition,animate,AnimationEvent, animation, useAnimatio
 import { DynamicDialogContent } from './dynamicdialogcontent';
 import { DynamicDialogConfig } from './dynamicdialog-config';
 import { CommonModule } from '@angular/common';
-import { DomHandler } from 'primeng/dom';
+import { DomHandler } from '@imamasurya/primeng/dom';
 import { DynamicDialogRef } from './dynamicdialog-ref';
-import { ZIndexUtils } from 'primeng/utils';
-import { PrimeNGConfig } from 'primeng/api';
+import { ZIndexUtils } from '@imamasurya/primeng/utils';
+import { PrimeNGConfig } from '@imamasurya/primeng/api';
 
 const showAnimation = animation([
     style({ transform: '{{transform}}', opacity: 0 }),

@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Product } from '../../domain/product';
 import { ProductService } from '../../service/productservice';
-import { SelectItem } from 'primeng/api';
-import { MessageService } from 'primeng/api';
+import { SelectItem } from '@imamasurya/primeng/api';
+import { MessageService } from '@imamasurya/primeng/api';
 
 @Component({
     templateUrl: './tableeditdemo.html',

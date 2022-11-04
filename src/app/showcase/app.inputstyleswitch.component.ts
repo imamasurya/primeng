@@ -1,10 +1,10 @@
 import { Component, NgModule, OnInit, OnDestroy } from '@angular/core';
-import { RadioButtonModule } from 'primeng/radiobutton';
+import { RadioButtonModule } from '@imamasurya/primeng/radiobutton';
 import { FormsModule } from '@angular/forms';
 import { AppConfigService} from './service/appconfigservice';
 import { Subscription } from 'rxjs';
 import { AppConfig } from './domain/appconfig';
-import { DomHandler } from 'primeng/dom';
+import { DomHandler } from '@imamasurya/primeng/dom';
 
 @Component({
     selector: 'app-inputStyleSwitch',

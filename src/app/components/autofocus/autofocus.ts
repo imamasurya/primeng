@@ -1,6 +1,6 @@
 import {NgModule,Directive,ElementRef,Input} from '@angular/core';
 import {CommonModule} from '@angular/common';
-import {DomHandler} from 'primeng/dom';
+import {DomHandler} from '@imamasurya/primeng/dom';
 
 @Directive({
     selector: '[pAutoFocus]',

@@ -2,16 +2,16 @@ import {NgModule,Component,Input,AfterContentInit,OnDestroy,Output,EventEmitter,
     ContentChildren,QueryList,TemplateRef,Inject,ElementRef,forwardRef,ChangeDetectionStrategy,SimpleChanges, ViewEncapsulation, ViewChild} from '@angular/core';
 import {Optional} from '@angular/core';
 import {CommonModule} from '@angular/common';
-import {PrimeNGConfig, TranslationKeys, TreeNode} from 'primeng/api';
-import {SharedModule} from 'primeng/api';
-import {PrimeTemplate} from 'primeng/api';
-import {TreeDragDropService} from 'primeng/api';
+import {PrimeNGConfig, TranslationKeys, TreeNode} from '@imamasurya/primeng/api';
+import {SharedModule} from '@imamasurya/primeng/api';
+import {PrimeTemplate} from '@imamasurya/primeng/api';
+import {TreeDragDropService} from '@imamasurya/primeng/api';
 import {Subscription} from 'rxjs';
-import {BlockableUI} from 'primeng/api';
-import {ObjectUtils} from 'primeng/utils';
-import {DomHandler} from 'primeng/dom';
-import {RippleModule} from 'primeng/ripple';
-import {Scroller, ScrollerModule, ScrollerOptions} from 'primeng/scroller';
+import {BlockableUI} from '@imamasurya/primeng/api';
+import {ObjectUtils} from '@imamasurya/primeng/utils';
+import {DomHandler} from '@imamasurya/primeng/dom';
+import {RippleModule} from '@imamasurya/primeng/ripple';
+import {Scroller, ScrollerModule, ScrollerOptions} from '@imamasurya/primeng/scroller';
 
 @Component({
     selector: 'p-treeNode',
@@ -92,7 +92,7 @@ import {Scroller, ScrollerModule, ScrollerOptions} from 'primeng/scroller';
         'class': 'p-element'
     }
 })
-export class UITreeNode implements OnInit {
+export class UITreeNode implements OnChanges {
 
     static ICON_CLASS: string = 'p-treenode-icon ';
 
@@ -128,8 +128,9 @@ export class UITreeNode implements OnInit {
 
     draghoverNode: boolean
 
-    ngOnInit() {
-        this.node.parent = this.parentNode;
+
+    ngOnChanges() {
+        this.node = {...this.node, parent: this.parentNode } as TreeNode<any>;
         if (this.parentNode) {
             this.tree.syncNodeOption(this.node, this.tree.value, 'parent', this.tree.getNodeWithKey(this.parentNode.key, this.tree.value));
         }
@@ -800,17 +801,17 @@ export class Tree implements OnInit,AfterContentInit,OnChanges,OnDestroy,Blockab
     serializeNodes(parent, nodes, level, visible) {
         if (nodes && nodes.length) {
             for(let node of nodes) {
-                node.parent = parent;
+                const newNode = Object.assign(node, { parent: parent });
                 const rowNode = {
-                    node: node,
+                    node: newNode,
                     parent: parent,
                     level: level,
                     visible: visible && (parent ? parent.expanded : true)
                 };
                 this.serializedValue.push(rowNode);
 
-                if (rowNode.visible && node.expanded) {
-                    this.serializeNodes(node, node.children, level + 1, rowNode.visible);
+                if (rowNode.visible && newNode.expanded) {
+                    this.serializeNodes(newNode, newNode.children, level + 1, rowNode.visible);
                 }
             }
         }

@@ -1,12 +1,12 @@
 import {NgModule,Component,EventEmitter,Output,Input,ChangeDetectionStrategy, ViewEncapsulation, ContentChildren, AfterContentInit, TemplateRef, QueryList, forwardRef, ChangeDetectorRef, ViewChild, ElementRef} from '@angular/core';
 import {CommonModule} from '@angular/common';
-import {RippleModule} from 'primeng/ripple';
-import {OverlayService, PrimeNGConfig, PrimeTemplate, SharedModule, TranslationKeys, TreeNode} from 'primeng/api';
+import {RippleModule} from '@imamasurya/primeng/ripple';
+import {OverlayService, PrimeNGConfig, PrimeTemplate, SharedModule, TranslationKeys, TreeNode} from '@imamasurya/primeng/api';
 import {animate, style, transition, trigger, AnimationEvent} from '@angular/animations';
 import {NG_VALUE_ACCESSOR} from '@angular/forms';
-import {ConnectedOverlayScrollHandler, DomHandler} from 'primeng/dom';
-import {Tree, TreeModule} from 'primeng/tree';
-import {ObjectUtils, ZIndexUtils} from 'primeng/utils';
+import {ConnectedOverlayScrollHandler, DomHandler} from '@imamasurya/primeng/dom';
+import {Tree, TreeModule} from '@imamasurya/primeng/tree';
+import {ObjectUtils, ZIndexUtils} from '@imamasurya/primeng/utils';
 
 
 export const TREESELECT_VALUE_ACCESSOR: any = {

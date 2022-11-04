@@ -1,5 +1,5 @@
 import {Component,OnInit,ViewEncapsulation} from '@angular/core';
-import {MenuItem, MessageService} from 'primeng/api';
+import {MenuItem, MessageService} from '@imamasurya/primeng/api';
 import { TicketService } from './ticketservice';
 import { Subscription } from 'rxjs';
 

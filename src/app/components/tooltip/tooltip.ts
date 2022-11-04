@@ -1,8 +1,8 @@
 import { NgModule, Directive, ElementRef, AfterViewInit, OnDestroy, Input, NgZone, SimpleChanges } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { DomHandler, ConnectedOverlayScrollHandler } from 'primeng/dom';
-import { ZIndexUtils } from 'primeng/utils'
-import { PrimeNGConfig } from 'primeng/api';
+import { DomHandler, ConnectedOverlayScrollHandler } from '@imamasurya/primeng/dom';
+import { ZIndexUtils } from '@imamasurya/primeng/utils'
+import { PrimeNGConfig } from '@imamasurya/primeng/api';
 
 export interface TooltipOptions {
     tooltipLabel?: string;

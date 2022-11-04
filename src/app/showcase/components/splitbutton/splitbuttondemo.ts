@@ -1,6 +1,6 @@
 import {Component,OnInit} from '@angular/core';
-import {MessageService} from 'primeng/api';
-import {MenuItem} from 'primeng/api';
+import {MessageService} from '@imamasurya/primeng/api';
+import {MenuItem} from '@imamasurya/primeng/api';
 
 @Component({
     templateUrl: './splitbuttondemo.html',

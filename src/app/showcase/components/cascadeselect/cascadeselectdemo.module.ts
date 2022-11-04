@@ -2,11 +2,11 @@ import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {CascadeSelectDemo} from './cascadeselectdemo';
 import {CascadeSelectDemoRoutingModule} from './cascadeselectdemo-routing.module';
-import {ButtonModule} from 'primeng/button';
-import {PanelModule} from 'primeng/panel';
-import {TabViewModule} from 'primeng/tabview';
+import {ButtonModule} from '@imamasurya/primeng/button';
+import {PanelModule} from '@imamasurya/primeng/panel';
+import {TabViewModule} from '@imamasurya/primeng/tabview';
 import {AppCodeModule} from '../../app.code.component';
-import {CascadeSelectModule} from 'primeng/cascadeselect';
+import {CascadeSelectModule} from '@imamasurya/primeng/cascadeselect';
 import {FormsModule} from '@angular/forms';
 import { AppDemoActionsModule } from '../../app.demoactions.component';
 
